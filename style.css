@@ -1,37 +1,32 @@
 @charset "UTF-8";
 body {
-  margin: 0;
+  margin: 0px;
+    padding: 0px;
 }
 .banner {
+  padding: 0px;
   height: 100px;
   display: grid;
-  grid-template-columns: 120px 1fr 0px 300px;
+  grid-template-columns: 47% 1fr 30px 287px;
   position: sticky;
-  top: 0px;
+  top: -15px;
   background-color: #c4170c;
   align-items: center;
 }
 body {
   background-color: #ffffff;
-  text-align: center;
 }
 h1 {
   font-family: "Menuill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   text-shadow: 1px;
   font-size: 50px;
-  text-align: center;
 }
-p,
-h2,
 figcaption {
   color: rgb(0, 0, 1);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 1px;
   text-align: center;
-}
-a {
-  color: white;
 }
 h3 {
   color: rgb(255, 255, 255);
@@ -48,26 +43,159 @@ h3 {
   position: absolute;
   right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
+  width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .conteudoDropdown a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 20px;
   text-decoration: none;
   display: block;
 }
 .menuDropDown {
   position: sticky;
-  left: 0px;
+  left: 55px;
 }
-.barraPesquisa {
-  padding: 1px 0px;
+.menu {
+  height: auto;
 }
-.intup {
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 1px;
+}
+
+main {
+  padding: 15px;
+}
+
+.modoEscuro {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 300px;
+  text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+}
+
+.modoClaro {
+  background-color: white;
+  border-radius: 300px;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+}
+
+#divBusca {
+  background-color: #E0EEEE;
+  border: solid 2px #000000;
   border-radius: 10px;
-  border-color: black;
+  width: 250px;
+  height: 20px;
 }
 
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 15px;
+  border: none;
+  height: 19px;
+  width: 158px;
+}
 
+#divBusca img {
+  float: left;
+}
+
+#divBusca {
+  background-color: white;
+}
+
+a {
+  color: #c4170c;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#searchbar {
+  border: 0 none;
+  padding: none;
+  width: 220px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#conteudo-menu a {
+  color: #c4170c;
+  font-size: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 23% 25% 1% 30% 25%;
+  grid-template-rows: 350px 350px 350px 350px;
+}
+
+.quadradoUm {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+h1 {
+  color: #c4170c;
+}
+
+.contentBig {
+  grid-column-start: 2;
+
+}
+
+.textBig {
+  grid-column: 4;
+  position: relative;
+  top: -200xpx;
+  
+}
+
+.textBig h2 {
+  color: white;
+  height: 10%;
+}
+
+.layoutSelic {
+  display: grid;
+  grid-template-columns: 31% 25% 1% 30% 25%;
+  grid-template-rows: 350px 350px 350px 350px;
+}
+
+.layoutSelic h1{
+  width: 73%;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.layoutSelic h2{
+  font-family: var(--font-family-book),var(--font-family-book-fallback);
+  font-size: 15px;
+  width: 73%;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.bannerSelic {
+  padding: 0px;
+  height: 101px;
+  display: grid;
+  grid-template-columns: 8% 1fr 69% 30px 287px;
+  position: sticky;
+  top: -15px;
+  background-color: #c4170c;
+  align-items: center;
+}
+
+.bannerSelic h1 {
+  color: white;
+  text-align: center;
+
+}

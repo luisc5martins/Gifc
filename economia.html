@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="gifc.png" href="camada.png">
+
+    <style>
+        body {
+        padding: 0px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: rgb(54, 54, 54);
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+    }
+    .dark-mode p, h1{
+        color: white;
+    }
+    body {
+
+font: 1em Arial, Helvetica, sans-serif; background-color: Opeachpuff;
+
+}
+
+.background-mode {
+
+background-color: #c4170c;
+
+width: 100%;
+
+margin: auto;
+
+position: sticky;
+
+top: 0px;
+}
+
+    </style>
+
+    <script>
+        
+        function clickMenu() {
+            
+            if (document.getElementsByClassName("conteudoDropdown")[0].style.display == 'block')
+
+                document.getElementsByClassName("conteudoDropdown")[0].style.display = "none";
+
+            else
+
+                document.getElementsByClassName("conteudoDropdown")[0].style.display = "block";
+        }
+        
+      function darkMode() {
+        
+        var element = document.body;
+        
+        var content = document.getElementById("DarkModetext");
+        
+        element.className = "dark-mode";
+      
+    }
+      
+      function lightMode() {
+        
+        var element = document.body;
+        
+        element.className = "light-mode";
+      
+    }
+      
+      function search_tema() {
+    
+    let input = document.getElementById('searchbar').value
+    
+    input=input.toLowerCase();
+    
+    let x = document.getElementsByClassName('temas');
+      
+    for (i = 0; i < x.length; i++) { 
+        
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            
+            x[i].style.display="none";
+
+        } else {
+
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+    </script>
+</head>
+
+<body>
+
+    <div class="banner">
+
+        <div class="menuDropDown" style="float:left;">
+            
+            <button class="dropbtn" onclick="clickMenu()"><img src="icon.png" alt="" height="50px"></button>
+            
+            <div id="conteudo-menu" class="conteudoDropdown" style="left:0;">
+                
+                <div id="conteudo-menu" class="menu"></div>
+                <a href="economia.html">Economia</a>
+                <a href="educacao.html">Educação</a>
+                <a href="esporte.html">Esporte</a>
+                <a href="saude.html">Saúde</a>
+                <a href="tecnologia.html">Tecnologia</a>
+
+               </div>
+            
+            </div>
+
+            <span class="logo"><img src="gifcm.png" alt="" height="120px"></span>
+            
+            <div id="divBusca">
+
+                <img src="lupa.png" alt="Buscar" height="20px">
+                
+                <input id="searchbar" onkeyup="search_tema()" type="text" name="search" placeholder="Buscar temas">
+    
+            </div>
+
+        </div>
+
+     </div>
+
+    <div class="background-mode">
+
+<button class="modoEscuro" onclick="darkMode()">Dark mode</button>
+
+<button class="modoClaro" onclick="lightMode()">Light mode</button>
+ 
+</div>
+
+<div>
+
+    <main class="layout">
+
+        <div class="quadradoUm">
+            
+            <div class="conteudo">
+
+                
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="./temas.js"></script>
+
+</body>
+
+</html>

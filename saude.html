@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gifc</title>
+    <title>Gifc.html</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="gifc.png" href="camada.png">
 
@@ -27,7 +27,8 @@
             color: black;
         }
 
-        .dark-mode p {
+        .dark-mode p,
+        h1 {
             color: white;
         }
 
@@ -48,12 +49,8 @@
 
             position: sticky;
 
-            top: 85px;
+            top: 0px;
         }
-
-        @import url(tiny.css) (min-width:300px);
-        @import url(small.css) (min-width:600px);
-        @import url(big.css) (min-width:900px);
     </style>
 
     <script>
@@ -119,6 +116,7 @@
             <button class="dropbtn" onclick="clickMenu()"><img src="icon.png" alt="" height="50px"></button>
 
             <div id="conteudo-menu" class="conteudoDropdown" style="left:0;">
+
                 <div id="conteudo-menu" class="menu"></div>
                 <a href="economia.html">Economia</a>
                 <a href="educacao.html">Educação</a>
@@ -149,57 +147,26 @@
         <button class="modoEscuro" onclick="darkMode()">Dark mode</button>
 
         <button class="modoClaro" onclick="lightMode()">Light mode</button>
+
     </div>
-    <main class="layout">
 
-        <div>
-            <div class="contentBig">
+    <div>
 
-                <a href="selic.html"><img src="not-istoquis.png" alt="" width="100%" class="image1"></a>
-    
-            </div>
-    
-            <div class="textBig">
-    
-                <a href="selic.html">
-    
-                    <h2>Selic a 13,75%: veja como <br />ficam os investimentos e onde <br /> aplicar seu dinheiro</h2>
-    
-                </a>
-    
-            </div>
+        <main class="layout">
 
-        </div>
+            <div class="quadradoUm">
 
-        
+                <div class="conteudo">
 
-        <div class="contentHalf">
 
-            <div class="half">
 
-                <a href=""><img src="" alt=""></a>
+                </div>
 
             </div>
 
-            <div class="textHalf">
+        </main>
 
-                <a href="empresas.html"><img src=".png" alt="" width="" class=""></a>
-
-                <a>
-                    5G no Brasil: guia explica o que vai mudar com a nova tecnologia
-                </a>
-
-            </div>
-
-            <div class="otherHalf">
-
-                <img src="" alt="">
-
-            </div>
-
-        </div>
-
-    </main>
+    </div>
 
     <script src="./temas.js"></script>
 
